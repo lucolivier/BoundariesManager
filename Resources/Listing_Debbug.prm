@@ -1,0 +1,26 @@
+#!/bin/bash
+
+    eraseRepos='NO'
+
+    typeCode='INSEE'
+
+    requestOpenStreetMap='YES'
+        openStreetMapRequestURL='http://overpass-api.de/api/interpreter?data=[timeout:900][out:json];(rel[admin_level=8]["ref:INSEE"="<CODE>"][boundary=administrative];>>;);out;'
+        openStreetMapCodeslistingCmd="/Users/lucol/Documents/DEV/AreaManagement/BoundariesManager/Listing_Debbug.db"
+        continueRequest='YES'
+
+    generateDataFiles='YES'
+        removeRequestResultFiles='NO'
+
+    generateFullPolygons='YES'
+        removeDataFiles='NO'
+
+    generateReducedPolygons='YES'
+        removeFullPolygonsFiles='NO'
+
+    recordReducedPolygonToDB='NO'
+        DBAddress='127.0.0.1'
+        DBName='gladal'
+        DBUser='gladal'
+        DBPassword='Qsbx2n9w0v3Q'
+

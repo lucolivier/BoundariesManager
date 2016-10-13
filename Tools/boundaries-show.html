@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC1Kdr4xCxJvjAhjTUTbZT3Vy4SYeiK4pw&sensor=false&libraries=geometry"></script>
+
+		<script type="text/javascript" src="repos/fpjson/33063"></script>
+        <script type="text/javascript" src="repos/rpjson/33063"></script>
+    	<script type="text/javascript" src="boundaries-show.js"></script>
+<style type="text/css">
+			#mapdiv {
+				width:800px;
+				height:800px;
+				margin: 0 0 5px 0;
+				border: 1px solid black;
+				/*background: black;*/
+			}
+			#coucou {
+				background: red;
+			}
+</style>			
+    </head>
+    <body>
+    <div id="mapdiv"></div>
+    <div>
+        <input id="tfCode" type="textbox" size="35" value="code" onkeypress="(event.keyCode==13) && loadPolygon()">
+        <input id="btCode" type="button" value="load..." onclick="loadPolygon()">
+    </div>
+		<script type="text/javascript">
+			startMap();
+			drawPolygons();
+		</script>
+    </body>
+</html>

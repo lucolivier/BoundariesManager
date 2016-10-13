@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC1Kdr4xCxJvjAhjTUTbZT3Vy4SYeiK4pw&sensor=false&libraries=geometry"></script>
+		<!-- <script type="text/javascript" src="nodes_31555.json"></script> -->
+		<!-- <script type="text/javascript" src="nodes_31555.json.reduced"></script> -->
+		<script type="text/javascript" src="nodes_33063.json"></script>
+    	<script type="text/javascript" src="boundaries-2.00.js"></script>
+<style type="text/css">
+			#mapdiv {1000px;
+				height:1000px;
+				margin: 0 0 5px 0;
+				border: 1px solid black;
+				/*background: black;*/
+			}
+			#coucou {
+				background: red;
+			}
+</style>			
+    </head>
+    <body>
+    <div id="mapdiv"></div>
+		<script type="text/javascript">
+			startMap();
+			//drawBound();
+			drawPolygon();
+		</script>
+    </body>
+</html>
